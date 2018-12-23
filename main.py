@@ -84,6 +84,7 @@ def main(telegram_token, channel_name):
     save_checkpoint(news)
 
 if __name__ =="__main__":
-    main('694370052:AAFppeVu-o94Uday6Dr4Cm_0Y86FL4EFoR4', 'MiptNews test')
+    token = os.environ['TELEGRAM_TOKEN']
+    main(token, 'MiptNews test')
 
 
